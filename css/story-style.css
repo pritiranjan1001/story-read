@@ -1,0 +1,145 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  font-family: "Cutive Mono", monospace;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+
+a{
+  text-decoration: none;
+  color: #fff;
+  font-family: "Cutive Mono", monospace;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.sep {
+  border: 0;
+  width: 3em;
+  height: 1px;
+  margin: 1em 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.mast {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  background-color: #111;
+}
+.mast:after {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(17, 17, 17, 0.2);
+}
+.mast > div {
+  z-index: 2;
+  position: relative;
+}
+.mast__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: 50%;
+}
+.mast__header {
+  padding: 5%;
+  width: 50%;
+  margin-top: -10%;
+}
+section p{
+  width: 80%;
+}
+
+.mast__text{
+  position: absolute;
+        margin-top: 10%;
+    margin-left: 30%; 
+     z-index: 2; 
+     -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    /* color: #fff; */
+    /* font: normal 400 70px/1 "Cutive Mono", monospace; */
+    /* text-align: center; */
+ 
+}
+
+.mast__text_1{
+  position: absolute;
+        margin-top: 20%;
+    margin-left: 30%; 
+     z-index: 2; 
+     -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    /* color: #fff; */
+    /* font: normal 400 70px/1 "Cutive Mono", monospace; */
+    /* text-align: center; */
+ 
+}
+
+.mast__title {
+  font-family: "Cutive Mono", monospace;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.glowIn {
+  text-align: left;
+  line-height: 1.8;
+  color: white;
+  font-family: "Cutive Mono", monospace;
+}
+.glowIn span {
+  animation: glowIn 0.8s ease both;
+}
+
+@keyframes glowIn {
+  from {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+    text-shadow: 0 0 25px white;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.7;
+  }
+}
+
+.side-menu {
+width: 2px;
+top: 5%;
+left: 5%;
+position: absolute;
+z-index: 999;
+}
